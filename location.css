@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;500&display=swap');
-
 *{
     box-sizing: border-box;
 }
@@ -14,7 +13,6 @@
 }
 
 body{
-    /* font-family: 'Big Shoulders Display', cursive; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,62 +20,20 @@ body{
     height: 100vh;
 }
 
-header{
-    font-family: var(--fontBig);
-    display: flex;
-    flex-direction: column;
+.map{
+    position: relative;
+}
+
+.map img{
     width: 100%;
-}
-
-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 120px 16px;
-}
-
-footer{
-    display: flex;
-    flex-direction: column;
-    padding: 120px 16px;
-    background-color: var(--heading);
-    padding:48px 32px ;
-}
-
-/* text styling */
-.hero{
-    width: 100%;
-}
-
-h1{
-    line-height: 55px;
-    font-size: 60px;
-    font-weight: 900;
-    font-family: var(--fontBig);
-    color: var(--heading);
-}
-
-p{
-    font-size: 18px;
-    line-height: 28px;
-    font-weight: 300;
-    font-family: var(--fontOutfit);
-    color: var(--paragraph);
-}
-
-/* header styles */
-.header-title{
-    margin: 32px 16px;
-}
-
-.header-description{
-    margin: 0px 16px;
 }
 
 a{
     display: flex;
     text-decoration: none;
     margin-top: 32px;
+    position: absolute;
+    top: -32px;
 }
 
 .button{
@@ -107,43 +63,68 @@ a{
     align-items: center;
     justify-content: space-around;
 }
-/* header styles */
 
-/* main */
-.grid1{
-    margin-bottom: 25px;
-}
-
-.yourday h1{
-    margin-bottom: 21px;
-}
-
-.grid2{
-    margin-top: 32px;
-    margin-bottom: 16px;
-}
-
-.grid3{
-    margin-bottom: 16px;
-}
-
-.main-footer{
+.location{
+    display: flex;
+    flex-direction: column;
+    padding: 48px 16px 56px 16px;
     background-color: var(--heading);
-    padding: 48px 24px;
+    width: 100%;
 }
 
-.main-footer h1{
-    color:white;
-    margin-bottom: 24px;
+.location-h{
+    margin-bottom: 48px;
 }
 
-.main-footer p{
+h1{
+    line-height: 45px;
+    font-size: 50px;
+    font-weight: 900;
+    font-family: var(--fontBig);
     color: white;
 }
 
-/* main styles */
+.street{
+    margin-bottom: 20px;
+}
+
+.street h3{
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 32px;
+    font-family: var(--fontBig);
+    color: #D5966C;
+}
+
+.location-p{
+    margin-bottom: 20px;
+}
+
+.location-p p{
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 300;
+    font-family: var(--fontOutfit);
+    color: white;
+
+}
+
+.location-p2 p{
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 300;
+    font-family: var(--fontOutfit);
+    color: white;
+}
 
 /* footer */
+footer{
+    display: flex;
+    flex-direction: column;
+    padding: 120px 16px;
+    background-color: var(--button);
+    padding:48px 32px ;
+}
 
 .footer-container{
     display: flex;
@@ -151,7 +132,8 @@ a{
     gap: 38px;
 }
 .footer-container p{
-    color: white;
+    color: var(--heading);
+    font-family: var(--fontOutfit);
 }
 
 .icons-container{
