@@ -28,12 +28,24 @@ body{
     width: 100%;
 }
 
+.tablet{
+    display: none;
+}
+
 a{
     display: flex;
     text-decoration: none;
     margin-top: 32px;
     position: absolute;
     top: -32px;
+}
+
+a:hover .button{
+    background-color: var(--button);
+}
+
+a:hover .button-secondhalf{
+    background-color: var(--heading);
 }
 
 .button{
@@ -142,3 +154,62 @@ footer{
 }
 
 /* footer */
+
+
+/* tablet responsive */
+
+@media screen and (min-width: 768px){
+
+    /* main */
+    .mobile{
+        display: none;
+    }
+
+    .tablet{
+        display: block;
+    }
+
+    .button-secondhalf{
+        margin-left: 40px;
+    }
+    
+    .location{
+        flex-direction: row;
+        padding: 88px 40px 80px 40px;
+    }
+    
+    .location-h{
+        margin-right: 68px;
+    }
+
+    .location-p2{
+        max-width: 398px;
+    }
+
+
+    /* footer */
+
+    .footer-container{
+        display: flex;
+        flex-direction: row;
+    }
+
+    footer{
+        padding: 56px 40px;
+        height: 216px;
+        width: 100%;
+    }
+
+    .footer-p{
+        margin: 0 85px 0 35px;
+        
+    }
+
+    .footer-p p{
+        font-size: 16px;
+        line-height: 26px;
+        width: 281px;
+    }
+}
+
+
