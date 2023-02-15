@@ -32,6 +32,10 @@ body{
     display: none;
 }
 
+.desktop{
+    display: none;
+}
+
 a{
     display: flex;
     text-decoration: none;
@@ -212,4 +216,58 @@ footer{
     }
 }
 
+
+@media screen and (min-width: 1024px) {
+
+    .tablet{
+        display: none;
+    }
+
+    .desktop{
+        display: block;
+    }
+
+    .location{
+        padding: 104px 165px 128px 165px;
+        justify-content:space-between;
+    }
+
+    .location-h{
+        width: 320px;
+        margin-right: 150px;
+    }
+
+    h1{
+        font-size: 70px;
+        line-height: 70px;
+    }
+
+    .location-p p{
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    .location-p2 p{
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    .footer-container{
+        gap: 220px;
+    }
+
+    .footer-logo svg{
+        width: 160px;
+        height: 58px;
+    }
+
+    .footer-p{
+        max-width: 430px;
+        margin: 0;
+    }
+    
+    .footer-p p{
+        width: 100%;
+    }
+}
 
